@@ -8,7 +8,7 @@ class App extends Component {
             <div>
                 <Route exact path="/" component={Main}/>
                 <Route path="/library" component={Library}/>
-                <Route path="/search" component={Library}/>
+                <Route path="/search" component={SearchPage}/>
                 <Route path="/review" component={Review}/>
             </div>
         );

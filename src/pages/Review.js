@@ -1,14 +1,14 @@
 import React from 'react';
 import Header from '../components/Header';
-import SearchBar from '../components/SearchBar';
+import Block from '../components/ReviewBlock';
 
-const Main = () => {
+const Review = () => {
     return (
         <div>
             <Header />
-            <SearchBar />
+            <Block />
         </div>
     );
 };
 
-export default Main;
+export default Review;
