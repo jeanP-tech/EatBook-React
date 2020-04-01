@@ -1,0 +1,64 @@
+.search_container {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2020-books-1577735514.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.search_container input {
+  width: 400px;
+  height: 40px;
+  text-align: center;
+  border-radius: 10px;
+  border: white;
+  outline: none;
+}
+
+.book_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.book_list {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.book_list::after {
+  content: "";
+  flex: auto;
+}
+
+.book {
+  margin: 10px 10px 70px 0;
+  width: 320px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book img {
+  width: 130px;
+}
+
+/* .cover_img {
+  cursor: pointer;
+} */
+
+.book_info {
+  /* list-style: none; */
+}
+
+.book_info li {
+  margin-bottom: 20px;
+  margin-left: 30px;
+  width: 150px;
+  list-style: none;
+}

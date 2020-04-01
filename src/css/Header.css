@@ -1,0 +1,30 @@
+.header_container  {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.header_container #logo a{
+  text-decoration: none;
+  color: black;
+  font-size: 50px;
+  margin-left: 40px;
+  display: inline;
+}
+
+.header_container  ul {
+  list-style: none;
+  margin-left: auto;
+  float: right;
+}
+
+.header_container  ul a {
+  text-decoration: none;
+  color: #9B9B9B;
+}
+
+.header_container  ul li {
+  float: left;
+  margin-right: 20px;
+}
