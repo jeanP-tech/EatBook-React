@@ -1,11 +1,12 @@
 .header_container  {
   height: 90px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 25px;
 }
 
-.header_container #logo a{
+.header_container #logo a {
   text-decoration: none;
   color: black;
   font-size: 50px;
@@ -13,10 +14,14 @@
   display: inline;
 }
 
-.header_container  ul {
+.header_container hr {
+  display: none;
+}
+
+.header_container ul {
   list-style: none;
   margin-left: auto;
-  float: right;
+  margin-right: 50px;
 }
 
 .header_container  ul a {

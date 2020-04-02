@@ -29,6 +29,6 @@ const LibraryDetailInfo = () => {
       <p className="hashtag">{book['hashtag']}</p>
     </>
   );
-}
+};
 
 export default LibraryDetailInfo;
