@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { withRouter } from 'react-router-dom';
-import "../css/Main.css";
+import "../css/BookList.css";
 
 const SearchBar = ({ history }) => {
 

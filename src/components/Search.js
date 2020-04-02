@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Item from "./Item";
 import { searchBook } from "./SearchApi";
 import { withRouter } from 'react-router-dom';
-import "../css/Main.css";
+import "../css/BookList.css";
 import qs from 'qs';
 
 const Search = ({ location }) => {

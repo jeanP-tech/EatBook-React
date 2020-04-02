@@ -1,5 +1,6 @@
 import React from 'react';
-import "../css/Main.css";
+import "../css/BookList.css";
+import { Link } from 'react-router-dom';
 
 const ReadList = () => {
   const books = [...Array(30).keys()].map(i  => ({
@@ -10,17 +11,23 @@ const ReadList = () => {
     date: '2020.3.8 - 3.11',
     rating: '🌟🌟🌟🌟',
   }));
+
   const BookList = books.map((book) => (
     <div key={book['id']} className="book">
-      <img src={book['img']} />
+      <Link to={`/library/목소리를 드릴게요`}>
+        <img src={book['img']} />
+      </Link>
       <div className="book_info">
-        <li>{book['title']}</li>
+        <li>
+          <Link to={`/library/목소리를 드릴게요`}>
+            {book['title']}
+          </Link>
+        </li>
         <li>{book['author']}</li>
         <li>{book['date']}</li>
         <li>{book['rating']}</li>
       </div>
     </div>
-    // <div key={book['id']}>{book['title']}</div>
   ));
 
   return (

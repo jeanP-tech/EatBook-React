@@ -21,7 +21,7 @@
 .book_container {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .book_list {
@@ -48,17 +48,14 @@
   width: 130px;
 }
 
-/* .cover_img {
-  cursor: pointer;
-} */
-
-.book_info {
-  /* list-style: none; */
-}
-
 .book_info li {
   margin-bottom: 20px;
   margin-left: 30px;
   width: 150px;
   list-style: none;
+}
+
+.book_info li a {
+  text-decoration: none;
+  color: black;
 }
