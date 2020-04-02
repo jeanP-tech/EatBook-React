@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/DetailPage.css';
 
-const DetailInfo = () => {
+const LibraryDetailInfo = () => {
   const book = {
     title: '목소리를 드릴게요',
     img: 'https://lh3.googleusercontent.com/proxy/nYQztoDnDgRJ8plqx9U1pQmJ2Wh3FpZMfbz4P2iGbPwPIX3MCyk_2Xi2L-cAbS7bu4QFJNh9A8uTVufPB_jLJgkKVg',
@@ -31,4 +31,4 @@ const DetailInfo = () => {
   );
 }
 
-export default DetailInfo;
+export default LibraryDetailInfo;

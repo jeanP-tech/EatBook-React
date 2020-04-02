@@ -1,3 +1,8 @@
+.fa-arrow-left {
+  margin-left: 50px;
+  color: black;
+}
+
 .detail_info {
   display: flex;
   justify-content: center;
@@ -18,7 +23,7 @@
 }
 
 .info_list ul {
-    list-style: none;
+  list-style: none;
 }
 
 .info_list li {
@@ -38,5 +43,25 @@
 
 .hashtag {
   text-align: center;
-  margin: 70px 0;
+  margin: 80px 0;
+}
+
+.sentences_container {
+  margin: 80px 0 80px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.sentences {
+  width: 70%;
+  text-align: left;
+}
+
+.sentences ul {
+  list-style: none;
+  margin-top: 50px;
+}
+
+.sentences li {
+  margin-top: 50px;
 }

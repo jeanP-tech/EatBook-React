@@ -1,0 +1,44 @@
+.review_container {
+  display: flex;
+  justify-content: center;
+}
+
+.review_block {
+  width: 80%;
+  margin-bottom: 80px;
+}
+
+.review_block h3 {
+  margin-left: 15px;
+}
+
+.review_block .three_posts {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.review_block .post {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.review_block .post a {
+  text-decoration: none;
+}
+
+.review_block .post .title {
+  color: black;
+}
+
+.review_detail_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.review_detail_container .review_detail {
+  width: 80%;
+}

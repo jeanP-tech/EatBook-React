@@ -31,11 +31,6 @@
   flex-wrap: wrap;
 }
 
-.book_list::after {
-  content: "";
-  flex: auto;
-}
-
 .book {
   margin: 10px 10px 70px 0;
   width: 320px;

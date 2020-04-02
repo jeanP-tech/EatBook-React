@@ -7,6 +7,7 @@ const Review = () => {
         <div>
             <Header />
             <Block />
+            <Block />
         </div>
     );
 };
