@@ -4,7 +4,7 @@ import '../css/DetailPage.css';
 const LibraryDetailInfo = () => {
   const book = {
     title: '목소리를 드릴게요',
-    img: 'https://lh3.googleusercontent.com/proxy/nYQztoDnDgRJ8plqx9U1pQmJ2Wh3FpZMfbz4P2iGbPwPIX3MCyk_2Xi2L-cAbS7bu4QFJNh9A8uTVufPB_jLJgkKVg',
+    img: 'http://static.news.zumst.com/images/1/2019/12/27/b50851f9784645f7bde58324e1146bfe.jpg',
     author: '정세랑',
     rating: '🌟🌟🌟🌟',
     date: '2020.3.8 - 3.11',
@@ -13,9 +13,9 @@ const LibraryDetailInfo = () => {
   };
 
   return (
-    <>
+    <div className="info_container">
       <div className="detail_info">
-        <img src={book['img']} />
+        <img src={book['img']} className="library_cover"/>
         <div className="info_list">
           <ul>
             <li className="title">{book['title']}</li>
@@ -25,9 +25,9 @@ const LibraryDetailInfo = () => {
             <li className="comment">{book['comment']}</li>
           </ul>
         </div>
+        <p className="hashtag">{book['hashtag']}</p>
       </div>
-      <p className="hashtag">{book['hashtag']}</p>
-    </>
+    </div>
   );
 };
 

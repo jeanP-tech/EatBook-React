@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { Main, Library, Review, SearchPage, LibraryDetail, ReviewDetail } from 'pages';
+import { Main, Library, Review, SearchPage, LibraryDetail, ReviewDetail, SearchDetailPage } from 'pages';
 
 class App extends Component {
     render() {
@@ -11,7 +11,10 @@ class App extends Component {
                   <Route path="/library/:book" component={LibraryDetail}/>
                   <Route path="/library" component={Library}/>
                 </Switch>
-                <Route path="/search" component={SearchPage}/>
+                <Switch>
+                  <Route path="/search/:book" component={SearchDetailPage}/>
+                  <Route path="/search" component={SearchPage}/>
+                </Switch>
                 <Switch>
                   <Route path="/review/:post" component={ReviewDetail}/>
                   <Route path="/review" component={Review}/>

@@ -7,7 +7,7 @@ const ReadList = () => {
     id: i,
     title: '목소리를 드릴게요',
     author: '정세랑',
-    img: 'https://lh3.googleusercontent.com/proxy/nYQztoDnDgRJ8plqx9U1pQmJ2Wh3FpZMfbz4P2iGbPwPIX3MCyk_2Xi2L-cAbS7bu4QFJNh9A8uTVufPB_jLJgkKVg',
+    img: 'http://static.news.zumst.com/images/1/2019/12/27/b50851f9784645f7bde58324e1146bfe.jpg',
     date: '2020.3.8 - 3.11',
     rating: '🌟🌟🌟🌟',
   }));

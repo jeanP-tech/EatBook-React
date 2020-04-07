@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Item from "./Item";
 import { searchBook } from "./SearchApi";
 import { withRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import "../css/BookList.css";
 import qs from 'qs';
 
@@ -20,6 +21,7 @@ const Search = ({ location }) => {
     const params = {
       query: text,
       sort: "recency",
+      size: 50,
     };
 
     const { data } = await searchBook(params);
@@ -38,7 +40,18 @@ const Search = ({ location }) => {
             <Item
               key={index}
               thumbnail={book.thumbnail}
-              title={book.title}
+              title=
+                <Link to={{
+                  pathname : `search/${book.title}`,
+                  state : {
+                    title : book.title,
+                    thumbnail : book.thumbnail,
+                    authors : book.authors,
+                    publisher : book.publisher,
+                  },
+                }}>
+                  {book.title}
+                </Link>
               authors={book.authors}
             />
           ))}
