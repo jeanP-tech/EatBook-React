@@ -2,9 +2,9 @@ import React from 'react';
 import "../css/BookList.css";
 import { Link } from 'react-router-dom';
 
-const ReadList = () => {
+const ReadList = ()  => {
   const books = [...Array(30).keys()].map(i  => ({
-    id: i,
+    id: i + 1,
     title: '목소리를 드릴게요',
     author: '정세랑',
     img: 'http://static.news.zumst.com/images/1/2019/12/27/b50851f9784645f7bde58324e1146bfe.jpg',

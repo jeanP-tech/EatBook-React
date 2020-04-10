@@ -9,7 +9,7 @@ class Control extends Component {
           <button onClick={function(e){
             e.preventDefault();
             this.props.onChangeMode('update');
-          }.bind(this)}>UPDATE</button>
+          }.bind(this)}>Edit</button>
         </Link>
       </div>
     );

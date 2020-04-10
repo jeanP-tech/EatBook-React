@@ -1,0 +1,43 @@
+.edit_container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.edit_info {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 50px;
+  width: 80%;
+}
+
+.edit_info img {
+  width: 300px;
+}
+
+.edit_list {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit_list input {
+  margin-bottom: 10px;
+  width: 400px;
+  font-family: 'Noto Serif KR', 'Segoe UI', 'Roboto';
+  text-align: center;
+}
+
+.edit_list .title {
+  height: 30px;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.edit_list .comment {
+  margin-top: 50px;
+  width: 400px;
+  font-family: 'Noto Serif KR', 'Segoe UI', 'Roboto';
+}
