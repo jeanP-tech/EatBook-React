@@ -19,8 +19,8 @@
 .edit_list {
   width: 400px;
   display: flex;
+  text-align: center;
   align-items: center;
-  justify-content: center;
 }
 
 .edit_list input {
@@ -30,14 +30,30 @@
   text-align: center;
 }
 
+.edit_list select {
+  margin-bottom: 7px;
+  /* display: block; */
+  height: 30px;
+  text-align: center;
+}
+
 .edit_list .title {
   height: 30px;
   font-size: 25px;
   margin-bottom: 30px;
 }
 
+.edit_list .author, .edit_list .date {
+  font-size: 15px;
+}
+
+.edit_list .date {
+  width: 130px;
+  display: block;
+}
+
 .edit_list .comment {
-  margin-top: 50px;
+  margin-top: 40px;
   width: 400px;
   font-family: 'Noto Serif KR', 'Segoe UI', 'Roboto';
 }

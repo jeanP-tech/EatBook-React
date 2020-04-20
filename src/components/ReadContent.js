@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import Control from './Control';
-import LibraryBookReview from '../components/LibraryBookReview';
+import LibraryBookReview from '../components/library/LibraryBookReview';
 import { Link } from 'react-router-dom';
 
 class ReadContent extends Component {
 
   render () {
+
     return (
-      <div>
+      <React.Fragment>
         <div className="info_container">
           <div className="detail_info">
             <img src={this.props.content.img} className="library_cover"/>
@@ -24,7 +25,7 @@ class ReadContent extends Component {
           </div>
         </div>
         <LibraryBookReview />
-      </div>
+      </React.Fragment>
     );
   }
 }

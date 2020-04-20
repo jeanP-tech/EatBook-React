@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/DetailPage.css';
+import '../../css/DetailPage.css';
 
 const LibraryBookReview = () => {
   return (

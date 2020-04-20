@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import '../css/DetailPage.css';
-import Control from './Control';
 import ReadContent from './ReadContent';
 import UpdateContent from './UpdateContent';
+import Control from './Control';
 
 class LibraryDetailContainer extends Component {
   constructor(props){
@@ -29,30 +29,37 @@ class LibraryDetailContainer extends Component {
     if (this.state.mode === 'read') {
       _article = <ReadContent mode={this.state.mode} content={this.state.contents} />
     } else if (this.state.mode === 'update') {
-      _article = <UpdateContent data={this.state.contents} onSubmit={function(_img, _title, _author, _comment){
-        this.setState({
-            title: _title,
-            author: _author,
-            comment: _comment,
-            mode:'read'
-          });
-      }.bind(this)}/>
+      _article = <UpdateContent data={this.state.contents}
+        onSubmit={function(_img, _title, _author, _rating, _date, _comment){
+          this.setState({
+              title: _title,
+              author: _author,
+              rating: _rating,
+              comment: _comment,
+              date: _date,
+              mode: 'read'
+            });
+        }.bind(this)}/>
     }
 
     return _article
   }
 
   render() {
-
-    return (
-      <>
-      <Control onChangeMode={function(_mode){
+    let button;
+    if (this.state.mode === 'read') {
+      button = <Control onChangeMode={function(_mode){
         this.setState({
           mode: _mode
         });
       }.bind(this)} />
+    }
+
+    return (
+      <React.Fragment>
+        { button }
         { this.getContent() }
-      </>
+      </React.Fragment>
     );
   }
 }
