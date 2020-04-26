@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import Control from './Control';
-import LibraryBookReview from '../components/library/LibraryBookReview';
-import { Link } from 'react-router-dom';
 
-class ReadContent extends Component {
+class DetailInfo extends Component {
 
   render () {
 
@@ -21,13 +18,11 @@ class ReadContent extends Component {
                 <li className="comment">{this.props.content.comment}</li>
               </ul>
             </div>
-            <p className="hashtag">{this.props.content.hashtag}</p>
           </div>
         </div>
-        <LibraryBookReview />
       </React.Fragment>
     );
   }
 }
 
-export default ReadContent;
+export default DetailInfo;

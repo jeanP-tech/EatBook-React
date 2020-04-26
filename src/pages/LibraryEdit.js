@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from '../components/Header';
-import UpdateContent from '../components/UpdateContent';
+import UpdateContent from '../components/library/UpdateContent';
 
-const DetailEditPage = () => {
+const LibraryEdit = () => {
   return (
       <div>
           <Header />
@@ -11,4 +11,4 @@ const DetailEditPage = () => {
   );
 }
 
-export default DetailEditPage;
+export default LibraryEdit;

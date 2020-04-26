@@ -5,4 +5,5 @@ export { default as SearchPage } from './SearchPage';
 export { default as SearchDetailPage } from './SearchDetailPage';
 export { default as LibraryDetail } from './LibraryDetail';
 export { default as ReviewDetail } from './ReviewDetail';
-export { default as DetailEditPage } from './DetailEditPage';
+export { default as LibraryEdit } from './LibraryEdit';
+export { default as LibraryEditSentence } from './LibraryEditSentence';

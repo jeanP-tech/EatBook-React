@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEdit } from '@fortawesome/free-solid-svg-icons'
 
-class Control extends Component {
+class EditBtn extends Component {
   render() {
     return (
       <div>
@@ -13,7 +13,7 @@ class Control extends Component {
              this.props.onChangeMode('update');
            }.bind(this)}
             className="edit_btn">
-              <FontAwesomeIcon icon={faEdit} size="3x" />
+              <FontAwesomeIcon icon={faEdit} size="2x" />
             </button>
         </Link>
       </div>
@@ -21,4 +21,4 @@ class Control extends Component {
   }
 }
 
-export default Control;
+export default EditBtn;

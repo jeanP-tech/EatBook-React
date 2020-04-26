@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import '../css/DetailEdit.css';
+import Sentences from './Sentences';
+import '../../css/DetailEdit.css';
 
 class UpdateContent extends Component {
   constructor(props){
@@ -10,7 +11,8 @@ class UpdateContent extends Component {
       author: this.props.data.author,
       rating: this.props.data.rating,
       date: this.props.data.date,
-      comment: this.props.data.comment
+      comment: this.props.data.comment,
+
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -33,7 +35,7 @@ class UpdateContent extends Component {
 
   render(){
     return (
-      <div>
+      <React.Fragment>
         <div className="edit_container">
           <div className="edit_info">
             <img src={this.state.img} />
@@ -48,6 +50,7 @@ class UpdateContent extends Component {
                     this.state.comment
                   )
                 }.bind(this)}>
+
                   <input
                     name="title"
                     placeholder="제목"
@@ -84,10 +87,12 @@ class UpdateContent extends Component {
                   />
                 <button type="submit">완료</button>
               </form>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
+
+          <Sentences sentences={this.props.data.sentences} />
+      </React.Fragment>
     )
   }
 }

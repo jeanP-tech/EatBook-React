@@ -8,6 +8,7 @@
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
   margin-top: 50px;
   width: 80%;
 }
@@ -18,9 +19,7 @@
 
 .edit_list {
   width: 400px;
-  display: flex;
   text-align: center;
-  align-items: center;
 }
 
 .edit_list input {
@@ -28,13 +27,9 @@
   width: 400px;
   font-family: 'Noto Serif KR', 'Segoe UI', 'Roboto';
   text-align: center;
-}
-
-.edit_list select {
-  margin-bottom: 7px;
-  /* display: block; */
-  height: 30px;
-  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .edit_list .title {
@@ -47,13 +42,33 @@
   font-size: 15px;
 }
 
+.edit_list select {
+  margin-bottom: 7px;
+  height: 30px;
+  text-align: center;
+}
+
 .edit_list .date {
   width: 130px;
-  display: block;
+  margin-top: 5px
 }
 
 .edit_list .comment {
   margin-top: 40px;
   width: 400px;
   font-family: 'Noto Serif KR', 'Segoe UI', 'Roboto';
+}
+
+.sentences_info {
+  width: 70%;
+  text-align: left;
+}
+
+.sentence_input {
+  margin-top: 50px;
+  display: block;
+  width: 800px;
+  height: 50px;
+  font-family: 'Noto Serif KR', 'Segoe UI', 'Roboto';
+  font-size: 15px;
 }
