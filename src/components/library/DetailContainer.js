@@ -5,6 +5,8 @@ import ReadContent from './ReadContent';
 import UpdateContent from './UpdateContent';
 import EditBtn from './EditBtn';
 import UpdateSentences from './UpdateSentences';
+import DetailInfo from './DetailInfo';
+import Sentences from './Sentences';
 
 class DetailContainer extends Component {
   constructor(props){
@@ -28,20 +30,24 @@ class DetailContainer extends Component {
     }
   }
 
+  updateMode = text => {
+        this.setState({text: text})
+    }
+
   getInfo(){
     let bookInfo = null;
 
     if (this.state.mode === 'read') {
-      bookInfo = <ReadContent mode={this.state.mode} content={this.state.contents} />
+      bookInfo = <DetailInfo content={this.state.contents} />
     } else if (this.state.mode === 'update') {
       bookInfo = <UpdateContent data={this.state.contents}
-        onSubmit={function(_img, _title, _author, _rating, _date, _comment){
+        onSubmit={function(_title, _author, _rating, _date, _comment){
           this.setState({
               title: _title,
               author: _author,
               rating: _rating,
-              comment: _comment,
               date: _date,
+              comment: _comment,
               mode: 'read'
             });
         }.bind(this)}/>
@@ -53,8 +59,15 @@ class DetailContainer extends Component {
     let sentenceInfo = null;
 
     if (this.state.mode === 'read') {
+      sentenceInfo = <Sentences mode={this.state.mode} sentences={this.state.contents.sentences}
+        onChangeMode={function(_mode){
+          this.setState({
+            mode: _mode
+          });
+        }.bind(this)}
+      />
     } else if (this.state.mode === 'update-sentence') {
-      sentenceInfo = <UpdateSentences sentences={this.state.contents.sentences}
+      sentenceInfo = <UpdateSentences sentences={this.state.contents.sentences} content={this.state.contents}
         onSubmit={function(_sentence1, _sentence2, _sentence3){
           this.setState({
               sentence1: _sentence1,
@@ -69,6 +82,7 @@ class DetailContainer extends Component {
   }
 
   render() {
+
     let edit_button;
     if (this.state.mode === 'read') {
       edit_button = <EditBtn onChangeMode={function(_mode){

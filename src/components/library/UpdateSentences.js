@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
+import DetailInfo from './DetailInfo';
 import '../../css/DetailEdit.css';
 
 class UpdateSentences extends Component {
   constructor(props){
     super(props);
     this.state = {
-      sentence1: this.props.data.sentence1,
-      sentence2: this.props.data.sentence2,
-      sentence3: this.props.data.sentence3,
+      sentence1: this.props.sentences.sentence1,
+      sentence2: this.props.sentences.sentence2,
+      sentence3: this.props.sentences.sentence3,
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -31,6 +32,7 @@ class UpdateSentences extends Component {
   render(){
     return (
       <React.Fragment>
+        <DetailInfo content={this.props.content} />
         <div className="edit_container">
           <div className="edit_info">
             <div className="edit_list">
@@ -62,7 +64,7 @@ class UpdateSentences extends Component {
                     onChange={this.handleChange}
                     className="sentence"
                   />
-                  
+
                 <button type="submit">완료</button>
               </form>
             </div>

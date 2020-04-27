@@ -12,7 +12,6 @@ class UpdateContent extends Component {
       rating: this.props.data.rating,
       date: this.props.data.date,
       comment: this.props.data.comment,
-
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -44,7 +43,6 @@ class UpdateContent extends Component {
                 onSubmit={function(e){
                   e.preventDefault();
                   this.props.onSubmit(
-                    this.state.img,
                     this.state.title,
                     this.state.author,
                     this.state.comment
