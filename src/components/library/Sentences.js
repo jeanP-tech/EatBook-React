@@ -28,15 +28,12 @@ class Sentences extends Component {
 
     return (
       <React.Fragment>
-
         <div className="sentences_container">
           <div className="sentences">
             <h2>문장들</h2>
-            <div>
               <Link to={`/library/목소리를 드릴게요/edit_sentence`}>
                  { sentence_button }
               </Link>
-            </div>
             <ul>
               <li>{this.props.sentences.sentence1}</li>
               <li>{this.props.sentences.sentence2}</li>

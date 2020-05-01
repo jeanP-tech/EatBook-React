@@ -60,6 +60,20 @@
   text-align: left;
 }
 
+.sentences h2 {
+  display: inline;
+}
+
+.sentence_btn {
+  display: inline;
+  margin-left: 10px;
+  font-size: 18px;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  outline:none;
+}
+
 .sentences ul {
   list-style: none;
   margin-top: 50px;
@@ -67,13 +81,4 @@
 
 .sentences li {
   margin-top: 50px;
-}
-
-.edit_btn {
-  border: none;
-  background-color: inherit;
-  cursor: pointer;
-  outline:none;
-  float:right;
-  margin-right: 100px;
 }

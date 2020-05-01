@@ -1,4 +1,4 @@
-.review_container {
+.review_block_container {
   display: flex;
   justify-content: center;
 }
@@ -40,6 +40,8 @@
   display: flex;
   justify-content: center;
   text-align: center;
+  clear: right;
+  margin-bottom: 100px;
 }
 
 .review_detail {
@@ -47,11 +49,35 @@
 }
 
 .review_detail img {
-  width: 500px;
+  width: 70%;
   margin-top: 50px;
 }
 
 .review_detail .description {
   text-align: left;
+  font-size: 17px;
   margin: 50px 0 100px 0;
+}
+
+.update_title {
+  width: 400px;
+  height: 50px;
+  font-size: 1.17em;
+  font-weight: bold;
+  font-family: 'Noto Serif KR', 'Segoe UI', 'Roboto';
+  text-align: center;
+}
+
+.update_description {
+  width: 90%;
+  height: 400px;
+  font-family: 'Noto Serif KR', 'Segoe UI', 'Roboto';
+  font-size: 17px;
+  margin-top: 35px;
+}
+
+.submit_btn {
+  display: block;
+  float: right;
+  width: 100px;
 }

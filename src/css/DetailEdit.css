@@ -72,3 +72,28 @@
   font-family: 'Noto Serif KR', 'Segoe UI', 'Roboto';
   font-size: 15px;
 }
+
+.edit_sentences_container {
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.edit_sentences {
+  width: 70%;
+  text-align: left;
+}
+
+.edit_sentences textarea {
+  width: 95%;
+  font-family: 'Noto Serif KR', 'Segoe UI', 'Roboto';
+  margin-top: 40px;
+  font-size: 15px;
+  margin-left: 40px;
+}
+
+.submit_btn {
+  float: right;
+  display: block;
+  margin-top: 30px;
+}

@@ -1,12 +1,12 @@
 import React from 'react';
 import Header from '../components/Header';
-import ReviewPost from '../components/ReviewPost';
+import ReviewContainer from '../components/review/ReviewContainer';
 
 const ReviewDetail = () => {
   return (
       <div>
           <Header />
-          <ReviewPost />
+          <ReviewContainer />
       </div>
   );
 }

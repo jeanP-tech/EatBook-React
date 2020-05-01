@@ -3,7 +3,7 @@ import "../css/BookList.css";
 import { Link } from 'react-router-dom';
 
 const ReadList = ()  => {
-  const books = [...Array(30).keys()].map(i  => ({
+  const books = [...Array(12).keys()].map(i  => ({
     id: i + 1,
     title: '목소리를 드릴게요',
     author: '정세랑',

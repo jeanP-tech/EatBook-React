@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
-import '../../css/DetailPage.css';
 import ReadContent from './ReadContent';
 import UpdateContent from './UpdateContent';
-import EditBtn from './EditBtn';
+import EditBtn from '../EditBtn';
 import UpdateSentences from './UpdateSentences';
 import DetailInfo from './DetailInfo';
 import Sentences from './Sentences';
+import '../../css/DetailPage.css';
+import '../../css/EditBtn.css';
 
 class DetailContainer extends Component {
   constructor(props){
@@ -94,7 +95,9 @@ class DetailContainer extends Component {
 
     return (
       <React.Fragment>
-        { edit_button }
+        <Link to={`/library/목소리를 드릴게요/edit`}>
+          { edit_button }
+        </Link>
         { this.getInfo() }
         { this.getSentence() }
       </React.Fragment>

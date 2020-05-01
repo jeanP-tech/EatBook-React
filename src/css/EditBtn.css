@@ -1,0 +1,8 @@
+.edit_btn {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  outline:none;
+  float:right;
+  margin-right: 100px;
+}

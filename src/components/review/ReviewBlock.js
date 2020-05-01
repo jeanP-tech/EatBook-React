@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import '../css/Review.css';
+import '../../css/Review.css';
 
 const Block = () => {
   const reviews = [...Array(3).keys()].map(i  => ({
@@ -22,11 +22,11 @@ const Block = () => {
 
   return (
     <>
-    <div className="review_container">
+    <div className="review_block_container">
       <div className="review_block">
         <h3>재미있게 읽은 #목소리를드릴게요 의 다른 감상들</h3>
         <div className="three_posts">
-          {ReviewList}
+          { ReviewList }
         </div>
       </div>
     </div>

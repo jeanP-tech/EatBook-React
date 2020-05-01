@@ -33,9 +33,10 @@ class UpdateSentences extends Component {
     return (
       <React.Fragment>
         <DetailInfo content={this.props.content} />
-        <div className="edit_container">
-          <div className="edit_info">
-            <div className="edit_list">
+
+        <div className="edit_sentences_container">
+          <div className="edit_sentences">
+            <h2>문장들</h2>
               <form action="/library/목소리를 드릴게요" method="post"
                 onSubmit={function(e){
                   e.preventDefault();
@@ -65,9 +66,8 @@ class UpdateSentences extends Component {
                     className="sentence"
                   />
 
-                <button type="submit">완료</button>
+                <button type="submit" className="submit_btn">완료</button>
               </form>
-            </div>
           </div>
         </div>
       </React.Fragment>
