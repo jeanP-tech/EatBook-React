@@ -12,16 +12,15 @@
   margin-left: 15px;
 }
 
-.review_block .three_posts {
+.three_posts {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 30px;
 }
 
-.review_block .post {
-  width: 30%;
-  display: flex;
-  flex-direction: column;
+.three_posts .post {
+  width: 300px;
 }
 
 .review_block .post a {
@@ -33,7 +32,7 @@
 }
 
 .review_block .post img {
-  width: 300px;
+  width: 100%;
 }
 
 .review_detail_container {
