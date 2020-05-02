@@ -8,7 +8,9 @@ const SearchDetail = ({location}) => {
   return (
     <div className="info_container">
       <div className="detail_info">
-        <img src={book.thumbnail} className="search_cover" />
+        <div className="book_img">
+          <img src={book.thumbnail} />
+        </div>
         <div className="info_list">
           <ul>
             <li className="title">{book.title}</li>

@@ -17,8 +17,8 @@
   width: 300px;
 }
 
-.detail_info img {
-  max-width: 100%;
+.book_img img {
+  width: 100%;
   height: auto;
 }
 

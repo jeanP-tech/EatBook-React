@@ -15,13 +15,13 @@
   justify-content: space-around;
 }
 
-.book_img {
+.update_book_img {
   width: 300px;
   display: flex;
   flex-direction: column;
 }
 
-.book_img img {
+.update_book_img img {
   max-width: 100%;
   height: auto;
 }

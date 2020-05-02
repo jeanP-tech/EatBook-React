@@ -69,7 +69,7 @@ class UpdateContent extends Component {
                   )
                 }.bind(this)}>
                   <div className="edit_info">
-                    <div className="book_img">
+                    <div className="update_book_img">
                       <input type='file'
                         accept='image/jpg,impge/png,image/jpeg,image/gif'
                         name='profile_img'
