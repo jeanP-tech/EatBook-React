@@ -6,7 +6,9 @@ class UpdateReview extends Component {
     this.state = {
       img: this.props.contents.img,
       title: this.props.contents.title,
-      description: this.props.contents.description
+      description: this.props.contents.description,
+      file : '',
+      previewURL : ''
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -27,7 +29,28 @@ class UpdateReview extends Component {
     this.props.onCreate(this.state);
   }
 
+  handleFileOnChange = (e) => {
+    e.preventDefault();
+    let reader = new FileReader();
+    let file = e.target.files[0];
+    reader.onloadend = () => {
+      this.setState({
+        file : file,
+        previewURL : reader.result
+      })
+    }
+    reader.readAsDataURL(file);
+  }
+
   render(){
+
+    let profile_preview = null;
+    if(this.state.file !== ''){
+      profile_preview = <img className='review_img' src={this.state.previewURL}></img>
+    } else {
+      profile_preview = <img className='review_img' src={this.state.img}></img>
+    }
+
     return (
       <React.Fragment>
         <div className="review_detail_container">
@@ -48,7 +71,15 @@ class UpdateReview extends Component {
                   onChange={this.handleChange}
                   className="update_title"
                 />
-                <img src={this.state.img} />
+
+                <input type='file'
+                  accept='image/jpg,impge/png,image/jpeg,image/gif'
+                  name='profile_img'
+                  onChange={this.handleFileOnChange}
+                  className="update_img"
+                  />
+                {profile_preview}
+
                 <textarea
                   name="description"
                   placeholder="내용"

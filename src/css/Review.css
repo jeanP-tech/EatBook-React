@@ -47,9 +47,14 @@
   width: 70%;
 }
 
-.review_detail img {
+.review_detail form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review_img {
   width: 70%;
-  margin-top: 50px;
 }
 
 .review_detail .description {
@@ -59,12 +64,18 @@
 }
 
 .update_title {
-  width: 400px;
+  width: 80%;
   height: 50px;
-  font-size: 1.17em;
+  margin-bottom: 50px;
+  font-size: 20px;
   font-weight: bold;
   font-family: 'Noto Serif KR', 'Segoe UI', 'Roboto';
   text-align: center;
+}
+
+.update_img {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .update_description {

@@ -8,7 +8,9 @@ class DetailInfo extends Component {
       <React.Fragment>
         <div className="info_container">
           <div className="detail_info">
-            <img src={this.props.content.img} className="library_cover"/>
+            <div className="book_img">
+              <img src={this.props.content.img} className="library_cover"/>
+            </div>
             <div className="info_list">
               <ul>
                 <li className="title">{this.props.content.title}</li>

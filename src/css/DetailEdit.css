@@ -2,40 +2,50 @@
   display: flex;
   justify-content: center;
   margin-bottom: 100px;
+  margin-top: 50px;
 }
 
-.edit_info {
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 50px;
+.edit_container form {
   width: 80%;
 }
 
-.edit_info img {
+.edit_info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.book_img {
   width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.book_img img {
+  max-width: 100%;
+  height: auto;
 }
 
 .edit_list {
-  width: 400px;
+  width: 300px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   text-align: center;
+  margin: 60px 0 60px 0;
 }
 
 .edit_list input {
-  margin-bottom: 10px;
-  width: 400px;
   font-family: 'Noto Serif KR', 'Segoe UI', 'Roboto';
   text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .edit_list .title {
   height: 30px;
   font-size: 25px;
-  margin-bottom: 30px;
+  width: 100%;
 }
 
 .edit_list .author, .edit_list .date {
@@ -43,19 +53,17 @@
 }
 
 .edit_list select {
-  margin-bottom: 7px;
+  width: 100px;
   height: 30px;
   text-align: center;
 }
 
 .edit_list .date {
   width: 130px;
-  margin-top: 5px
 }
 
 .edit_list .comment {
-  margin-top: 40px;
-  width: 400px;
+  width: 100%;
   font-family: 'Noto Serif KR', 'Segoe UI', 'Roboto';
 }
 
