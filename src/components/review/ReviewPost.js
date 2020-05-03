@@ -9,7 +9,7 @@ class ReviewPost extends Component {
         <div className="review_detail_container">
           <div className="review_detail">
             <h3>{this.props.contents.title}</h3>
-            <img src={this.props.contents.img} className="review_img"/>
+            <div className="review_img"> <img src={this.props.contents.img} alt="review image"/> </div>
             <div className="description">{this.props.contents.description}</div>
           </div>
         </div>

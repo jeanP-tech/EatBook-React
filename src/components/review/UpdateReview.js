@@ -46,9 +46,9 @@ class UpdateReview extends Component {
 
     let profile_preview = null;
     if(this.state.file !== ''){
-      profile_preview = <img className='review_img' src={this.state.previewURL}></img>
+      profile_preview = <img src={this.state.previewURL} alt="preview_image" />
     } else {
-      profile_preview = <img className='review_img' src={this.state.img}></img>
+      profile_preview = <img src={this.state.img} alt="preview_image"/>
     }
 
     return (
@@ -78,7 +78,7 @@ class UpdateReview extends Component {
                   onChange={this.handleFileOnChange}
                   className="update_img"
                   />
-                {profile_preview}
+                <span className="review_img"> {profile_preview} </span>
 
                 <textarea
                   name="description"

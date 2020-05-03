@@ -14,7 +14,7 @@ class Block extends Component {
     const ReviewList = reviews.map((review) => (
       <div key={review['id']} className="post">
         <Link to={`/review/목소리를 드릴게요`}>
-          <img src={review['img']} />
+          <img src={review['img']} alt="review image"/>
         </Link>
         <Link to={`/review/목소리를 드릴게요`}>
           <h4 className="title">{review['title']}</h4>

@@ -76,7 +76,7 @@ class UpdateContent extends Component {
                         onChange={this.handleFileOnChange}
                         className="update_img"
                         />
-                      {profile_preview}
+                      <div className="book_cover">{profile_preview}</div>
                     </div>
 
                     <div className="edit_list">

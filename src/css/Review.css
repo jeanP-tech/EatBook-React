@@ -38,23 +38,34 @@
 .review_detail_container {
   display: flex;
   justify-content: center;
-  text-align: center;
   clear: right;
   margin-bottom: 100px;
 }
 
 .review_detail {
-  width: 70%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .review_detail form {
+  width: 80%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 .review_img {
-  width: 70%;
+  width: 80%;
+  min-height: 1px;
+}
+
+.review_img img {
+  max-width: 100%;
+  height:auto;
 }
 
 .review_detail .description {
@@ -63,25 +74,24 @@
   margin: 50px 0 100px 0;
 }
 
+.description {
+  width: 80%;
+}
+
 .update_title {
   width: 80%;
   height: 50px;
   margin-bottom: 50px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
-  font-family: 'Noto Serif KR', 'Segoe UI', 'Roboto';
+  font-family: 'Noto Serif KR', 'serif';
   text-align: center;
 }
 
-.update_img {
-  margin-left: 0;
-  margin-right: 0;
-}
-
 .update_description {
-  width: 90%;
+  width: 100%;
   height: 400px;
-  font-family: 'Noto Serif KR', 'Segoe UI', 'Roboto';
+  font-family: 'Noto Serif KR', 'sans-serif';
   font-size: 17px;
   margin-top: 35px;
 }

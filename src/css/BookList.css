@@ -33,6 +33,8 @@
 }
 
 .book_info li {
+  width: 100%;
+  text-align: center;
   list-style: none;
 }
 

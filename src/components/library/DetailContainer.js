@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
-import ReadContent from './ReadContent';
 import UpdateContent from './UpdateContent';
 import EditBtn from '../EditBtn';
 import UpdateSentences from './UpdateSentences';

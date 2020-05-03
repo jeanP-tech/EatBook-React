@@ -15,7 +15,9 @@ const ReadList = ()  => {
   const BookList = books.map((book) => (
     <div key={book['id']} className="book">
       <Link to={`/library/목소리를 드릴게요`}>
-        <img src={book['img']} />
+        <div className="readlist_cover">
+          <img src={book['img']} alt="book list cover"/>
+        </div>
       </Link>
       <div className="book_info">
         <li>

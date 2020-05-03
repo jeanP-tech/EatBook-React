@@ -9,7 +9,7 @@ class DetailInfo extends Component {
         <div className="info_container">
           <div className="detail_info">
             <div className="book_img">
-              <img src={this.props.content.img} className="library_cover"/>
+              <img src={this.props.content.img} alt="cover image" className="library_cover"/>
             </div>
             <div className="info_list">
               <ul>

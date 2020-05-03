@@ -6,7 +6,6 @@ class UpdateInfo extends Component {
 
     return (
       <React.Fragment>
-
       </React.Fragment>
     );
   }

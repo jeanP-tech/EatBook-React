@@ -33,7 +33,6 @@ class UpdateSentences extends Component {
     return (
       <React.Fragment>
         <DetailInfo content={this.props.content} />
-
         <div className="edit_sentences_container">
           <div className="edit_sentences">
             <h2>문장들</h2>
@@ -65,7 +64,6 @@ class UpdateSentences extends Component {
                     onChange={this.handleChange}
                     className="sentence"
                   />
-
                 <button type="submit" className="submit_btn">완료</button>
               </form>
           </div>

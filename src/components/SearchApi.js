@@ -3,6 +3,7 @@ import Search from './Search';
 import axios from "axios";
 
 const Kakao = axios.create({
+  credentials: "include",
   baseURL: "https://dapi.kakao.com",
   headers: {
     Authorization: "KakaoAK 9b97e883418c2945387a81cd7c9953d9"
